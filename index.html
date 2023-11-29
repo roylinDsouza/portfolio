@@ -34,6 +34,12 @@
 
     .navbar {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-family: 'Montserrat-Medium';
+        font-size: 15px;
+    }
+
+    .navbar-brand{
+        color: #FFA06F;
     }
 
     .introText {
@@ -41,29 +47,59 @@
     }
 
     .profileImg {
-        height: 350px;
+        height: 320px;
     }
 
     .introText h3{
         font-family: cursive;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .downloadResume{
+        background-color: #ffa06f;
+        border-radius: 20px;
     }
 
     .introText h3,
     .mySkills,
     .myWork {
         color: #FFA06F;
+        font-size: 22px;
+        font-family: 'Montserrat-SemiBold';
+    }
+
+    .introText span{
+        font-family: 'Montserrat-SemiBold';
+        font-size: 20px;
+    }
+
+    .introText p{
+        font-family: 'Montserrat-Medium';
+        font-size: 15px;
     }
 
     .contactMe {
         background: #ffa06f;
         border-radius: 3px;
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
     }
 
     .knowMore {
         border: 1px solid #ffffff;
         border-radius: 3px;
+        color: #ffffff;
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+    }
+
+    .contactMe:hover{
+        background-color: #ffa06f;
+    }
+
+    .knowMore:hover{
+        border: 1px solid #ffffff;
         color: #ffffff;
     }
 
@@ -76,11 +112,16 @@
     .skillImg{
         height: 20px;
     }
+
+    .skillIntro{
+        font-family: 'Montserrat-Medium';
+        font-size: 15px;
+    }
 </style>
 <div class="wrapper">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -94,7 +135,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Link</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item downloadResume">
                         <a class="nav-link text-white">Download Resume</a>
                     </li>
                 </ul>
@@ -104,7 +145,7 @@
     </nav>
     <section id="introSection">
         <div class="container-fluid">
-            <div class="d-flex flex column align-items-center">
+            <div class="d-flex flex column">
                 <div class="introText">
                     <span class="text-white">Hello I'm</span><br />
                     <h3>Nishel Roylin DSouza</h3>
@@ -158,10 +199,10 @@
     <section id="myskillsSection">
         <div class="container-fluid">
             <div class="row mx-4">
-                <h5 class="mySkills text-center mb-4">My Skills</h5>
+                <h5 class="mySkills text-center mb-4 text-uppercase">My Skills</h5>
                 <div class="col-md-6">
                     <!-- <img src="C:\Users\Nishel\Downloads\skills.png"> -->
-                    <p class="text-white">
+                    <p class="skillIntro text-white">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's \
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
