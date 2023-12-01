@@ -36,9 +36,10 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         font-family: 'Montserrat-Medium';
         font-size: 15px;
+        padding: 15px 0;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         color: #FFA06F;
     }
 
@@ -50,13 +51,13 @@
         height: 320px;
     }
 
-    .introText h3{
+    .introText h3 {
         font-family: cursive;
         font-weight: bold;
         font-size: 40px;
     }
 
-    .downloadResume{
+    .downloadResume {
         background-color: #ffa06f;
         border-radius: 20px;
     }
@@ -67,17 +68,18 @@
         color: #FFA06F;
     }
 
-    .mySkills,.myWork{
+    .mySkills,
+    .myWork {
         font-size: 22px;
-        font-family: 'Montserrat-SemiBold';
+        font-family: cursive;
     }
 
-    .introText span{
+    .introText span {
         font-family: 'Montserrat-SemiBold';
         font-size: 20px;
     }
 
-    .introText p{
+    .introText p {
         font-family: 'Montserrat-Medium';
         font-size: 15px;
     }
@@ -97,28 +99,67 @@
         font-size: 14px;
     }
 
-    .contactMe:hover{
-        background-color: #ffa06f;
+    .contactMe:hover,.contactMe:active {
+        background-color: #ffa06f !important;
     }
 
-    .knowMore:hover{
-        border: 1px solid #ffffff;
-        color: #ffffff;
+    .knowMore:hover,.knowMore:active {
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
     }
 
-    .skillSets{
+    .skillSets {
         box-shadow: rgb(138 138 145 / 20%) 0px 7px 29px 0px;
         border-radius: 8px;
         padding: 30px;
     }
 
-    .skillImg{
+    .skillImg {
         height: 20px;
     }
 
-    .skillIntro{
+    .skillIntro {
         font-family: 'Montserrat-Medium';
         font-size: 15px;
+    }
+
+    .progress-bar {
+        background-color: #ffa06f;
+        color: #000000;
+        font-family: 'Montserrat-Medium';
+        font-size: 12px;
+    }
+
+    #myworkSection .card-title {
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .viewMore {
+        background: #ffa06f;
+        border-radius: 3px;
+        width: 100%;
+        font-family: 'Montserrat-Medium';
+        font-size: 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .viewMore:hover,.viewMore:active{
+        background-color: #FFA06F !important;
+        color: #000000 !important;
+        border: none !important;
+    }
+
+    .cDescription {
+        font-family: 'Montserrat-Medium';
+        font-size: 12px;
+    }
+
+    .card-img-top {
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
 </style>
 <div class="wrapper">
@@ -146,7 +187,7 @@
             </div>
         </div>
     </nav>
-    <section id="introSection">
+    <section id="introSection" class="mb-3">
         <div class="container-fluid">
             <div class="d-flex flex column">
                 <div class="introText">
@@ -199,7 +240,7 @@
             </div>
         </div>
     </section>
-    <section id="myskillsSection">
+    <section id="myskillsSection" class="mb-5">
         <div class="container-fluid">
             <div class="row mx-4">
                 <h5 class="mySkills text-center mb-4 text-uppercase">My Skills</h5>
@@ -218,17 +259,17 @@
                         Lorem Ipsum.
                     </p>
                 </div>
-                
+
                 <div class="col-md-6">
-                    
+
                     <div class="skillSets">
                         <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="95"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 95%">95% </div>
+                            <div class="progress-bar" style="width: 95%">95% (Adobe XD)</div>
                         </div>
                         <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="80"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 80%">80%</div>
+                            <div class="progress-bar" style="width: 80%">80% (Figma)</div>
                         </div>
                         <div class="progress mb-3" role="progressbar" aria-label="Example with label" aria-valuenow="60"
                             aria-valuemin="0" aria-valuemax="100">
@@ -249,50 +290,115 @@
     </section>
     <section id="myworkSection">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row mx-4">
                 <div class="col-md-12">
-                    <h5 class="myWork text-center mb-4">My Work</h5>
+                    <h5 class="myWork text-center text-uppercase mb-4">Latest Work</h5>
                     <div class="owl-carousel owl-theme owl-loaded">
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
                                 <div class="owl-item">
-                                    <div class="card" >
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
+                                    <div class="card py-2">
+                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <img src="C:\Users\Nishel\Documents\Courseera\Portfolio\Images\floralRush.jpg"
+                                            class="card-img-top px-3" alt="...">
+                                        <div class="card-body py-0">
+
+                                            <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
+                                                text of the printing and typesetting industry....</p>
+
+                                            <p><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                                        class="btn viewMore">More Info</button></a>
+
+                                            </p>
+
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="owl-item">
-                                    <div class="card" >
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
+                                    <div class="card py-2">
+                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <img src="C:\Users\Nishel\Documents\Courseera\Portfolio\Images\floralRush.jpg"
+                                            class="card-img-top px-3" alt="...">
+                                        <div class="card-body py-0">
+
+                                            <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
+                                                text of the printing and typesetting industry....</p>
+
+                                            <p><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                                        class="btn viewMore">More Info</button></a>
+
+                                            </p>
+
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="owl-item">
-                                    <div class="card" >
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
+                                    <div class="card py-2">
+                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <img src="C:\Users\Nishel\Documents\Courseera\Portfolio\Images\floralRush.jpg"
+                                            class="card-img-top px-3" alt="...">
+                                        <div class="card-body py-0">
+
+                                            <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
+                                                text of the printing and typesetting industry....</p>
+
+                                            <p><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                                        class="btn viewMore">More Info</button></a>
+
+                                            </p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="card py-2">
+                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <img src="C:\Users\Nishel\Documents\Courseera\Portfolio\Images\floralRush.jpg"
+                                            class="card-img-top px-3" alt="...">
+                                        <div class="card-body py-0">
+
+                                            <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
+                                                text of the printing and typesetting industry....</p>
+
+                                            <p><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                                        class="btn viewMore">More Info</button></a>
+
+                                            </p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="card py-2">
+                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <img src="C:\Users\Nishel\Documents\Courseera\Portfolio\Images\floralRush.jpg"
+                                            class="card-img-top px-3" alt="...">
+                                        <div class="card-body py-0">
+
+                                            <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
+                                                text of the printing and typesetting industry....</p>
+
+                                            <p><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                                        class="btn viewMore">More Info</button></a>
+
+                                            </p>
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-nav">
-                            <div class="owl-prev">prev</div>
-                            <div class="owl-next">next</div>
-                        </div>
-                        <div class="owl-dots">
-                            <div class="owl-dot active"><span></span></div>
-                            <div class="owl-dot"><span></span></div>
-                            <div class="owl-dot"><span></span></div>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -305,21 +411,6 @@
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 5,
-                nav: true,
-                loop: false
-            }
-        }
+        items: 4
     })
 </script>
