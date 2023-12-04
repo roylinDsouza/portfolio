@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
@@ -6,25 +7,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <style>
-
     @font-face {
         font-family: Montserrat;
-        src: url(Fonts/Montserrat-Regular.ttf);
+        src: url(/Fonts/Montserrat-Regular.ttf);
     }
 
     @font-face {
         font-family: Montserrat-Medium;
-        src: url(Fonts/Montserrat-Medium.ttf);
+        src: url(Fonts/Montserrat-Regular.ttf);
     }
 
     @font-face {
         font-family: Montserrat-SemiBold;
-        src: url(Fonts/Montserrat-SemiBold.ttf);
+        src: url(/Fonts/Montserrat-SemiBold.ttf);
     }
 
     @font-face {
         font-family: Montserrat-Bold;
-        src: url(Fonts/Montserrat-Bold.ttf);
+        src: url(/Fonts/Montserrat-Bold.ttf);
     }
 
     .wrapper {
@@ -64,12 +64,14 @@
 
     .introText h3,
     .mySkills,
-    .myWork {
+    .myWork,
+    .getinTouch {
         color: #FFA06F;
     }
 
     .mySkills,
-    .myWork {
+    .myWork,
+    .getinTouch {
         font-size: 22px;
         font-family: cursive;
     }
@@ -99,11 +101,13 @@
         font-size: 14px;
     }
 
-    .contactMe:hover,.contactMe:active {
+    .contactMe:hover,
+    .contactMe:active {
         background-color: #ffa06f !important;
     }
 
-    .knowMore:hover,.knowMore:active {
+    .knowMore:hover,
+    .knowMore:active {
         border: 1px solid #ffffff !important;
         color: #ffffff !important;
     }
@@ -145,7 +149,8 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
-    .viewMore:hover,.viewMore:active{
+    .viewMore:hover,
+    .viewMore:active {
         background-color: #FFA06F !important;
         color: #000000 !important;
         border: none !important;
@@ -160,6 +165,38 @@
         height: 100px;
         object-fit: cover;
         margin-bottom: 10px;
+    }
+
+    #contactMeSection .form-label{
+        font-family: 'Montserrat-Medium';
+        color: #ffffff;
+        font-size: 12px;
+    }
+
+    #contactMeSection .form-control{
+        border-radius: 0;
+        background: #464646;
+        border: none;
+        color: #ffffff;
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+    }
+
+    .form-control:focus{
+        box-shadow: none;
+    }
+
+    .sendBtn{
+        background: #ffa06f;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+    font-family: 'Montserrat-Medium';
+    font-size: 12px;
+    }
+
+    #contactMeSection img{
+        height: 400px;
     }
 </style>
 <div class="wrapper">
@@ -288,7 +325,7 @@
             </div>
         </div>
     </section>
-    <section id="myworkSection">
+    <section id="myworkSection" class="mb-5">
         <div class="container-fluid">
             <div class="row mx-4">
                 <div class="col-md-12">
@@ -306,8 +343,7 @@
                                             <p class="card-text cDescription">Test Lorem Ipsum is simply dummy
                                                 text of the printing and typesetting industry....</p>
 
-                                            <p><a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#announcementModal4"><button type="submit"
+                                            <p><a href="Floral-Rush.pdf"><button type="submit"
                                                         class="btn viewMore">More Info</button></a>
 
                                             </p>
@@ -318,7 +354,7 @@
                                 </div>
                                 <div class="owl-item">
                                     <div class="card py-2">
-                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <h5 class="card-title text-center">Clan's Cafe Hub</h5>
                                         <img src="Images/floralRush.jpg"
                                             class="card-img-top px-3" alt="...">
                                         <div class="card-body py-0">
@@ -338,7 +374,7 @@
                                 </div>
                                 <div class="owl-item">
                                     <div class="card py-2">
-                                        <h5 class="card-title text-center">The Floral Rush</h5>
+                                        <h5 class="card-title text-center">Red Cross</h5>
                                         <img src="Images/floralRush.jpg"
                                             class="card-img-top px-3" alt="...">
                                         <div class="card-body py-0">
@@ -398,9 +434,38 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactMeSection">
+        <div class="container-fluid">
+            <div class="row mx-4">
+
+                <div class="col-md-6">
+                    <h5 class="getinTouch text-center mb-4 text-uppercase">Send me your message</h5>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name"
+                            >
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email"
+                            >
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn sendBtn">Send<i class="fa fa-paper-plane-o ps-1" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <img src="Images/contact.png">
                 </div>
             </div>
         </div>
