@@ -38,7 +38,7 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         font-family: 'Montserrat-Medium';
         font-size: 15px;
-        padding: 15px 0;
+        /* padding: 15px 0; */
     }
 
     .navbar-brand {
@@ -216,6 +216,35 @@
         color: #ffffff;
         text-align: center;
     }
+
+    #scroll-up {
+        position: fixed;
+        right: 2%;
+        bottom: 5%;
+        z-index: 999;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #scroll-up .icon {
+        border: 1px solid #5c5c5c;
+        padding: 0px;
+        border-radius: 12px;
+        background-color: #0000005c;
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
 </style>
 <div class="wrapper">
     <nav class="navbar navbar-expand-lg">
@@ -227,8 +256,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -236,9 +266,11 @@
                     </li>
                     <li class="nav-item downloadResume">
                         <a class="nav-link text-white" href="Images/Resume.pdf" download>Download Resume</a>
-                    </li>
+                    </li>-->
                 </ul>
-
+<span class="navbar-text">
+                    <a class="nav-link text-white p-2 downloadResume" href="" download>Download Resume</a>
+                  </span>
             </div>
         </div>
     </nav>
@@ -490,6 +522,21 @@
 </div>
 
 <script>
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#scroll-up').fadeIn();
+        } else {
+            $('#scroll-up').fadeOut();
+        }
+    });
+    $('#scroll-up').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
